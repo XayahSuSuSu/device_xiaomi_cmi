@@ -568,6 +568,10 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 # Display Calibration
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_cmd_mode_dsc_dsi_panel.xml
 
+# Display (gralloc)
+vendor/lib64/libgralloccore.so
+vendor/lib64/libgrallocutils.so
+
 # Display Postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd

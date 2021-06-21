@@ -112,5 +112,15 @@ service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
     user system
     group system input
 
+on property:init.svc.vendor.nv_mac=stopped
+    start vendor.btmac-sh
+
+service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
+    class late_start
+    user system
+    group system bluetooth wifi
+    oneshot
+    disabled
+
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1

@@ -20,7 +20,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Overlays-Device
 PRODUCT_PACKAGES += \
     DeviceFrameworks \
-    DeviceSystemUI
+    DeviceSystemUI \
+    TetheringConfigOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \

@@ -98,8 +98,8 @@ TARGET_USES_FOD_ZPOS := true
 TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cas

@@ -141,6 +141,8 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
 
 # Audio-Hardware
 vendor/bin/audioshell_service

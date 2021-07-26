@@ -15,8 +15,12 @@ $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
+
+# Overlays-Device
+PRODUCT_PACKAGES += \
+    DeviceFrameworks \
+    DeviceSystemUI
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \

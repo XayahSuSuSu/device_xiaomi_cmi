@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
+$(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -208,8 +208,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_lmi \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_lmi
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_cas \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_cas
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -259,7 +259,7 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_lmi
+    android.hardware.light@2.0-service.xiaomi_cas
 
 # LiveDisplay
 PRODUCT_PACKAGES += \

@@ -24,5 +24,5 @@ void property_override(char const prop[], char const value[]) {
 
 void vendor_load_properties() {
     property_override("ro.product.device", "cas");
-    property_override("ro.product.model", "Mi 10 Ultra");
+    property_override("ro.product.model", "M2007J1SC");
 }

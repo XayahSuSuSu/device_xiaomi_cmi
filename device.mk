@@ -217,8 +217,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_cas \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_cas
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kona \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
 
 # Fastbootd
 PRODUCT_PACKAGES += \

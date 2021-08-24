@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    CameraGo
+    Snap
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -230,10 +230,6 @@ PRODUCT_PACKAGES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# Gboard
-PRODUCT_PACKAGES += \
-    Gboard
 
 # GPS
 PRODUCT_COPY_FILES += \

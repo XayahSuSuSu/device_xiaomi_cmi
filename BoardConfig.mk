@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/cas
+DEVICE_PATH := device/xiaomi/cmi
 
 # Architecture
 TARGET_ARCH := arm64
@@ -25,7 +25,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := cas
+TARGET_OTA_ASSERT_DEVICE := cmi
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
@@ -45,7 +45,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
-TARGET_KERNEL_CONFIG := vendor/cas_defconfig
+TARGET_KERNEL_CONFIG := vendor/cmi_defconfig
 
 # Platform
 BOARD_VENDOR := xiaomi
@@ -105,8 +105,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cas
-TARGET_RECOVERY_DEVICE_MODULES := libinit_cas
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cmi
+TARGET_RECOVERY_DEVICE_MODULES := libinit_cmi
 
 # Media
 TARGET_USES_ION := true
@@ -229,4 +229,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/xiaomi/cas/BoardConfigVendor.mk
+include vendor/xiaomi/cmi/BoardConfigVendor.mk

@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "libinit_cas",
-    srcs: ["init_cas.cpp"],
+    name: "libinit_cmi",
+    srcs: ["init_cmi.cpp"],
     shared_libs: ["libbase"],
     recovery_available: true,
     include_dirs: [

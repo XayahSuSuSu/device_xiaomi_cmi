@@ -254,6 +254,13 @@ vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
+vendor/lib/libmegface.so
+vendor/lib/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so
+vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libst_soft_isp_calc_exposure_shared.so
+vendor/lib64/libmulticam_image_optical_zoom.so
+vendor/lib64/libst_soft_isp_shared.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libcamera_nn_stub.so
